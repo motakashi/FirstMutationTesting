@@ -9,17 +9,17 @@ public class TestFizzBuzzGenerator {
     FizzBuzzGenerator fizzBuzzGenerator = new FizzBuzzGenerator();
 
     @Test
-    public void returnFizzBuzzIfInputIsDivisibleByThreeAndFive() {
+    public void 引数30を渡した場合FizzBuzzが返却される() {
 
         int input = 30;
 
         String actual = fizzBuzzGenerator.generate(input);
 
-//        assertEquals("FizzBuzz", actual);
+        assertEquals("FizzBuzz", actual);
     }
 
     @Test
-    public void returnFizzIfInputIsDivisibleByThree() {
+    public void 引数6を渡した場合Fizzが返却される() {
 
         int input = 6;
 
@@ -29,7 +29,7 @@ public class TestFizzBuzzGenerator {
     }
 
     @Test
-    public void returnBuzzIfInputIsDivisibleByFive() {
+    public void 引数10を渡した場合Buzzが返却される() {
 
         int input = 10;
 
@@ -39,7 +39,7 @@ public class TestFizzBuzzGenerator {
     }
 
     @Test
-    public void returnNumberIfInputIsIndivisibleByThreeOrFive() {
+    public void 引数13を渡した場合13が返却される() {
 
         int input = 13;
 
